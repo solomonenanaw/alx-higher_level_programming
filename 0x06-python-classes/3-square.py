@@ -2,6 +2,7 @@
 """ Module providing a definition of a class 'Square'
 """
 
+
 class Square():
     """ Definition of a 'Square'
     """
