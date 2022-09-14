@@ -13,14 +13,14 @@ class Square():
 
    
    @property
-    def size(self):
+   def size(self):
         """ Get the size of a square
         """
         return self.__size
 
    
    @size.setter
-    def size(self, size):
+   def size(self, size):
         """ Set the size of a square
         """
         if not isinstance(size, int):
