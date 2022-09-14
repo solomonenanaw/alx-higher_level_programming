@@ -10,16 +10,15 @@ class Square():
         """
         self.size = size
 
-   
-   @property
-   def size(self):
+    @property
+    def size(self):
         """ Get the size of a square
         """
         return self.__size
 
    
-   @size.setter
-   def size(self, size):
+    @size.setter
+    def size(self, size):
         """ Set the size of a square
         """
         if not isinstance(size, int):
@@ -29,12 +28,12 @@ class Square():
         self.__size = size
 
    
-   def area(self):
+    def area(self):
         """ Compute the area of a 'Square'
         """
         return self.size ** 2
 
-   def my_print(self):
+    def my_print(self):
         """ Print a visual representation of a square
         """
         print('\n'.join(['#' * self.size] * self.size))
