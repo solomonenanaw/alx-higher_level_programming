@@ -12,6 +12,11 @@ class Rectangle():
         self.height = height
         self.width = width
 
+    def __del__(self):
+        """ Delete a rectangle
+        """
+        print("Bye rectangle...")
+
     def __str__(self):
         """ Represent a rectangle as a string
         """
@@ -41,14 +46,14 @@ class Rectangle():
         self.__width = value
 
     @property
-    def height(self): 
+    def height(self):
         """ Get the height of a rectangle
         """
         return self.__height
 
     @height.setter
     def height(self, value):
-        """ Set the height of a rectangle 
+        """ Set the height of a rectangle
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
