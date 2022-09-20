@@ -2,6 +2,7 @@
 """ Provides a class 'Rectangle' to represent a rectangle
 """
 
+
 class Rectangle():
     """ Definition of a class to represent a rectangle
     """
@@ -32,6 +33,7 @@ class Rectangle():
         """ Get the height of a rectangle
         """
         return self.__height
+
     @height.setter
     def height(self, value):
         """ Set the height of a rectangle
