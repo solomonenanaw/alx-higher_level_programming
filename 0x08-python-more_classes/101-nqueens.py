@@ -93,5 +93,4 @@ if __name__ == '__main__':
         print("N must be at least 4")
         sys.exit(1)
 
-
     solveNQueen(size)
