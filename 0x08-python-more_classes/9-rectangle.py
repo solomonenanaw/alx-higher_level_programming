@@ -97,4 +97,4 @@ class Rectangle():
         """ Get a new rectangle with width equal to height
         """
         return cls(size, size)
->>>>>>> 11235a33cfa8898105c361356413e2129192f890
+
