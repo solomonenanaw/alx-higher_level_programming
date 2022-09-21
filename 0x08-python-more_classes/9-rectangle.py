@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-i
-=======
 #!/usr/bin/python3
 """ Provides a class 'Rectangle' to represent a rectangle
 """
