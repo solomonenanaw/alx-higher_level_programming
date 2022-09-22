@@ -41,14 +41,14 @@ class TestMaxInteger(unittest.TestCase):
           self.assertEqual(max_integer([float("-inf")]), float("-inf"))
           self.assertNotEqual(max_integer([float("nan")]), 0)
      
-     def test_LimitsListArguments(self):
-         """Test with lists containg limits (i.e. inf, -inf, nan)"""
-         self.assertEqual(max_integer([0, float("inf")]), float("inf"))
-         self.assertEqual(max_integer([0, float("-inf")]), 0)
-         self.assertEqual(max_integer([float("inf"), 1]), float("inf"))
-         self.assertEqual(max_integer([float("-inf"), 1]), 1)
-         self.assertEqual(max_integer([0, float("inf"), 1]), float("inf"))
-         self.assertEqual(max_integer([0, float("-inf"), 1]), 1)
-         self.assertEqual(max_integer([0, float("nan")]), 0)
-         self.assertNotEqual(max_integer([float("nan"), 1]), 1)
-         self.assertEqual(max_integer([0, float("nan"), 1]), 1)
+      def test_LimitsListArguments(self):
+          """Test with lists containg limits (i.e. inf, -inf, nan)"""
+          self.assertEqual(max_integer([0, float("inf")]), float("inf"))
+          self.assertEqual(max_integer([0, float("-inf")]), 0)
+          self.assertEqual(max_integer([float("inf"), 1]), float("inf"))
+          self.assertEqual(max_integer([float("-inf"), 1]), 1)
+          self.assertEqual(max_integer([0, float("inf"), 1]), float("inf"))
+          self.assertEqual(max_integer([0, float("-inf"), 1]), 1)
+          self.assertEqual(max_integer([0, float("nan")]), 0)
+          self.assertNotEqual(max_integer([float("nan"), 1]), 1)
+          self.assertEqual(max_integer([0, float("nan"), 1]), 1)
