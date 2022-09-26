@@ -4,9 +4,9 @@
 
 
 class BaseGeometry:
-      """ Base class or geometric objects
-      """
-      def area(self):
-          """ Calculate the area of a geometric object
-          """
-          raise Exception("area() is not implemented")
+    """ Base class or geometric objects
+    """
+    def area(self):
+        """ Calculate the area of a geometric object
+        """
+        raise Exception("area() is not implemented")
