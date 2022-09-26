@@ -4,9 +4,9 @@
 
 
 class MyList(list):
-      """ List manager
-      """
-      def print_sorted(self):
-          """ Sorts and prints a list of numbers in ascending order
-          """
-          print(sorted(self))
+    """ List manager
+    """
+    def print_sorted(self):
+        """ Sorts and prints a list of numbers in ascending order
+        """
+        print(sorted(self))
