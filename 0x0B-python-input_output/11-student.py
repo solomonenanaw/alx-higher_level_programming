@@ -31,5 +31,5 @@ class Student:
         """Replaces all items in `json`
         """
 
-                                                                                                                                for items in json.keys():
+        for items in json.keys():
             self.__dict__[items] = json[items]
