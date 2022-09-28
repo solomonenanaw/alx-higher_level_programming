@@ -1,20 +1,20 @@
 #!/usr/bin/python3
-""" A module that reads files and writes stuff
-"""
+# 100-append_after.py
+"""Defines a text file insertion function."""
 
 
 def append_after(filename="", search_string="", new_string=""):
-    """Inserts a given string after another given string into filename
+    """Insert text after each line containing a given string in a file.
+    Args:
+        filename (str): The name of the file.
+        search_string (str): The string to search for within the file.
+        new_string (str): The string to insert.
     """
-
-    with open(filename, mode="r+", encoding="utf-8") as readFile:
-        hold_My_Beer = readFile.readlines()
-
-    count = 0
-    with open(filename, mode="w", encoding="utf-8") as writeFile:
-        for lines in hold_My_Beer:
-            count += 1
-            if search_string in lines:
-                hold_My_Beer.insert(count, new_string)
-        for lines in hold_My_Beer:
-            writeFile.write(lines)
+    text = ""
+    with open(filename) as r:
+        for line in r:
+            text += line
+            if search_string in line:
+                text += new_string
+    with open(filename, "w") as w:
+        w.write(text)
